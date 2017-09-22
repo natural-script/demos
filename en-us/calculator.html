@@ -2,366 +2,532 @@
 <script src="https://jste-manager.herokuapp.com/loader.min.js"></script>
 <en-us>
 
-configure this app with the following properties:
-its title is Calculator,
-its logo is http://www.iconarchive.com/download/i99341/dtafalonso/android-lollipop/Calculator.ico,
-its mode is app,
-its default window resolution is 412 × 690.
+configure this site with the following properties:
+its title is STEM Schools Of Alexandria,
+its logo is https://preview.ibb.co/c4Knwv/STEM_Alex_Logo.jpg,
+its default window resolution is 1366 × 644 in the case of the landscape mode and 412 × 732 in the case of the portrait mode.
+
+add a firebase_center with the following properties:
+its username is stem-alex-site,
+its password is AIzaSyAVWkpzwzE00p-_oJx40uf4DvZZtT4rz5k.
 
 add a page with the following properties:
-its name is calculator.
+its name is home.
 
-add a sidebar with the following properties:
-its name is primary_sidebar,
-its distance from the top is 275 pixels,
-its background is #69F0AE,
-its length is 400 pixels.
+add a page with the following properties:
+its name is features.
 
-add a grid container without a shadow with the following properties:
-its name is btnSetF,
-its container is primary_sidebar,
-its width is 280 pixels,
-its length is 50 pixels,
-its distance from the top is 50 pixels.
+add a page with the following properties:
+its name is contact_us.
 
-add a button with the following properties:
-its name is sinBtn,
-its text is sin,
-its container is btnSetF,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to sin( in the case that the value of resultTextA is 00000000 else set the value of resultTextA to << the value of resultTextA >>sin(.
+add a page with the following properties:
+its name is news1.
 
-add a button with the following properties:
-its name is cosBtn,
-its text is cos,
-its container is btnSetF,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to cos( in the case that the value of resultTextA is 00000000 else set the value of resultTextA to << the value of resultTextA >>cos(.
+add a page with the following properties:
+its name is news2.
 
-add a button with the following properties:
-its name is tanBtn,
-its text is tan,
-its container is btnSetF,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to tan( in the case that the value of resultTextA is 00000000 else set the value of resultTextA to << the value of resultTextA >>tan(.
+add a page with the following properties:
+its name is news3.
+
+add a container with the following properties:
+its name is header,
+its container is home,
+its width is 1366 pixels in the case of the landscape mode and 412 pixels in the case of the portrait mode,
+its length is 100 pixels in the case of the landscape mode and 100 pixels in the case of the portrait mode.
+
+add a transparent image with the following properties:
+its name is school_logo,
+its container is header,
+its source is https://preview.ibb.co/c4Knwv/STEM_Alex_Logo.jpg,
+its type is icon,
+its length is 60 pixels in the case of the landscape mode and 60 pixels in the case of the portrait mode,
+its width is 60 pixels in the case of the landscape mode and 60 pixels in the case of the portrait mode,
+its distance from the top is 15 pixels in the case of the landscape mode and 15 pixels in the case of the portrait mode,
+its distance from the left is 30 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode.
 
 add a grid container without a shadow with the following properties:
-its name is btnSetG,
-its container is primary_sidebar,
-its width is 280 pixels,
-its length is 50 pixels,
-its distance from the top is 140 pixels.
+its name is nav_bar,
+its container is header,
+its length is 80 pixels in the case of the landscape mode and 80 pixels in the case of the portrait mode,
+its width is 1000 pixels in the case of the landscape mode and 250 pixels in the case of the portrait mode,
+its distance from the top is 5 pixels in the case of the landscape mode and 15 pixels in the case of the portrait mode,
+its distance from the right is 45 pixels in the case of the landscape mode and 50 pixels in the case of the portrait mode.
 
-add a button with the following properties:
-its name is lnBtn,
-its text is ln,
-its container is btnSetG,
+add a text with the following properties:
+its name is home_link,
+its text is Home,
+its container is nav_bar,
+its font color is black,
+its font size is 30 pixels in the case of the landscape mode and 15 pixels in the case of the portrait mode,
+its font thickness is thick,
+its distance from the top is 20 pixels in the case of the landscape mode and 20 pixels in the case of the portrait mode,
+its commands are When it has been clicked, go to the page home.
+
+add a text with the following properties:
+its name is features_link,
+its text is Features,
+its container is nav_bar,
+its font color is black,
+its font size is 30 pixels in the case of the landscape mode and 15 pixels in the case of the portrait mode,
+its font thickness is thick,
+its distance from the top is 20 pixels in the case of the landscape mode and 20 pixels in the case of the portrait mode,
+its commands are When it has been clicked, go to the page features &&& When it has been clicked, go to the element feature1.
+
+add a dropdown_menu with the following properties:
+its name is features_menu,
+its items are Prepared Labs &&& Delicious Meals,
+its emitter is features_link,
+the commands of the item Prepared Labs are that When it has been clicked, go to the page features &&& When it has been clicked, go to the element feature1,
+the commands of the item Delicious Meals are that When it has been clicked, go to the page features &&& When it has been clicked, go to the element feature2.
+
+add a text with the following properties:
+its name is contact_us_link,
+its text is Contact us,
+its container is nav_bar,
+its font color is black,
+its font size is 30 pixels in the case of the landscape mode and 15 pixels in the case of the portrait mode,
+its font thickness is thick,
+its distance from the top is 20 pixels in the case of the landscape mode and 20 pixels in the case of the portrait mode,
+its commands are When it has been clicked, go to the page contact_us.
+
+add a parallax container with the following properties:
+its name is intro,
+its container is home,
+its width is 1366 pixels in the case of the landscape mode and 412 pixels in the case of the portrait mode,
+its length is 400 pixels in the case of the landscape mode and 560 pixels in the case of the portrait mode,
+its distance from the top is 100 pixels in the case of the landscape mode and 100 pixels in the case of the portrait mode,
+its background is https://preview.ibb.co/ctYxgv/STEM_Alex_Students.jpg.
+
+add a container with the following properties:
+its name is intro_container_mask,
+its container is intro,
+its background is black,
+its transparency is 50,
+its width is 1366 pixels in the case of the landscape mode and 412 pixels in the case of the portrait mode,
+its length is 400 pixels in the case of the landscape mode and 560 pixels in the case of the portrait mode.
+
+add a text with the following properties:
+its name is intro_message,
+its text is Learn More About The Best Schools In Egypt Ever,
+its container is intro,
 its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to ln( in the case that the value of resultTextA is 00000000 else set the value of resultTextA to << the value of resultTextA >>ln(.
+its font size is 42 pixels in the case of the landscape mode and 45 pixels in the case of the portrait mode,
+its font thickness is thick,
+its width is 960 pixels in the case of the landscape mode and 300 pixels in the case of the portrait mode,
+its distance from the top is 70 pixels in the case of the landscape mode and 70 pixels in the case of the portrait mode,
+its distance from the left is 210 pixels in the case of the landscape mode and 70 pixels in the case of the portrait mode.
 
-add a button with the following properties:
-its name is logBtn,
-its text is log,
-its container is btnSetG,
+add a text with the following properties:
+its name is intro_video_watch_btn,
+its text is Watch Video << an icon of play-circle-o >>,
+its container is intro,
 its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to log( in the case that the value of resultTextA is 00000000 else set the value of resultTextA to << the value of resultTextA >>log(.
-
-add a button with the following properties:
-its name is factorialBtn,
-its text is !,
-its container is btnSetG,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to << the value of resultTextA >>! in the case that the value of resultTextA isn't 00000000 &&& When it has been clicked, set the value of resultTextB to << the result of the mathematical expression: the value of resultTextA >>.
-
-add a grid container without a shadow with the following properties:
-its name is btnSetH,
-its container is primary_sidebar,
-its width is 280 pixels,
-its length is 50 pixels,
-its distance from the top is 220 pixels.
-
-add a button with the following properties:
-its name is piBtn,
-its text is π,
-its container is btnSetH,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to π in the case that the value of resultTextA is 00000000 else set the value of resultTextA to << the value of resultTextA >>π &&& When it has been clicked, set the value of resultTextB to << the result of the mathematical expression: the value of resultTextA >>.
-
-add a button with the following properties:
-its name is eualrNoBtn,
-its text is e,
-its container is btnSetH,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to e in the case that the value of resultTextA is 00000000 else set the value of resultTextA to << the value of resultTextA >>e &&& When it has been clicked, set the value of resultTextB to << the result of the mathematical expression: the value of resultTextA >>.
-
-add a button with the following properties:
-its name is powerBtn,
-its text is ^,
-its container is btnSetH,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to << the value of resultTextA >>^ in the case that the value of resultTextA isn't 00000000.
-
-add a grid container without a shadow with the following properties:
-its name is btnSetI,
-its container is primary_sidebar,
-its width is 280 pixels,
-its length is 50 pixels,
-its distance from the top is 300 pixels.
-
-add a button with the following properties:
-its name is openingBracketBtn,
-its text is (,
-its container is btnSetI,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to ( in the case that the value of resultTextA is 00000000 else set the value of resultTextA to << the value of resultTextA >>(.
-
-add a button with the following properties:
-its name is closingBracketBtn,
-its text is ),
-its container is btnSetI,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to ) in the case that the value of resultTextA is 00000000 else set the value of resultTextA to << the value of resultTextA >>) &&& When it has been clicked, set the value of resultTextB to << the result of the mathematical expression: the value of resultTextA >>.
-
-add a button with the following properties:
-its name is sqrtBtn,
-its text is √,
-its container is btnSetI,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to sqrt( in the case that the value of resultTextA is 00000000 else set the value of resultTextA to << the value of resultTextA >>sqrt(.
+its font size is 40 pixels in the case of the landscape mode and 40 pixels in the case of the portrait mode,
+its font thickness is thick,
+its width is 280 pixels in the case of the landscape mode and 280 pixels in the case of the portrait mode,
+its distance from the top is 120 pixels in the case of the landscape mode and 120 pixels in the case of the portrait mode,
+its distance from the left is 550 pixels in the case of the landscape mode and 70 pixels in the case of the portrait mode,
+its commands are When it has been clicked, open the dialog box intro_video_container.
 
 add a container without a shadow with the following properties:
-its name is resultContainerA,
-its container is calculator,
-its background is #FFFFFF,
-its width is 412 pixels,
-its length is 210 pixels,
-its distance from the top is 60 pixels.
+its name is news,
+its container is home,
+its width is 1366 pixels in the case of the landscape mode and 412 pixels in the case of the portrait mode,
+its length is 420 pixels in the case of the landscape mode and 820 pixels in the case of the portrait mode,
+its distance from the top is 500 pixels in the case of the landscape mode and 660 pixels in the case of the portrait mode.
+
+add a text with the following properties:
+its name is news_title,
+its text is News,
+its container is news,
+its font color is black,
+its font size is 40 pixels in the case of the landscape mode and 40 pixels in the case of the portrait mode,
+its font thickness is thick,
+its width is 280 pixels in the case of the landscape mode and 280 pixels in the case of the portrait mode,
+its distance from the top is 35 pixels in the case of the landscape mode and 35 pixels in the case of the portrait mode,
+its distance from the left is 640 pixels in the case of the landscape mode and 150 pixels in the case of the portrait mode.
 
 add a container without a shadow with the following properties:
-its name is btnContainerA,
-its container is calculator,
-its background is #212121,
-its width is 412 pixels,
-its length is 400 pixels,
-its distance from the bottom is 0 pixels.
+its name is news_links_container,
+its container is news,
+its width is 1366 pixels in the case of the landscape mode and 412 pixels in the case of the portrait mode,
+its distance from the top is 150 pixels in the case of the landscape mode and 150 pixels in the case of the portrait mode.
+
+add a container with the following properties:
+its name is news1_link_container,
+its container is news_links_container,
+its length is 200 pixels in the case of the landscape mode and 200 pixels in the case of the portrait mode,
+its width is 400 pixels in the case of the landscape mode and 380 pixels in the case of the portrait mode,
+its distance from the left is 40 pixels in the case of the landscape mode and 15 pixels in the case of the portrait mode.
+
+add a container with the following properties:
+its name is news2_link_container,
+its container is news_links_container,
+its length is 200 pixels in the case of the landscape mode and 200 pixels in the case of the portrait mode,
+its width is 400 pixels in the case of the landscape mode and 380 pixels in the case of the portrait mode,
+its distance from the left is 480 pixels in the case of the landscape mode and 15 pixels in the case of the portrait mode,
+its distance from the top is 0 pixel in the case of the landscape mode and 230 pixels in the case of the portrait mode.
+
+add a container with the following properties:
+its name is news3_link_container,
+its container is news_links_container,
+its length is 200 pixels in the case of the landscape mode and 200 pixels in the case of the portrait mode,
+its width is 400 pixels in the case of the landscape mode and 380 pixels in the case of the portrait mode,
+its distance from the left is 920 pixels in the case of the landscape mode and 15 pixels in the case of the portrait mode,
+its distance from the top is 0 pixel in the case of the landscape mode and 460 pixels in the case of the portrait mode.
 
 add a text with the following properties:
-its name is flashlightBtn,
-its text is << an icon of lightbulb-o >>,
-its container is resultContainerA,
-its font size is 30 pixels,
-its height is 50 pixels,
-its distance from the top is 20 pixels,
-its distance from the left is 370 pixels,
-its font color is gray,
-its commands are When it has been clicked, toggle the flashlight.
+its name is news1_link,
+its text is Starting School this year on 24 September,
+its font color is black,
+its container is news1_link_container,
+its width is 360 pixels in the case of the landscape mode and 360 pixels in the case of the portrait mode,
+its distance from the left is 20 pixels in the case of the landscape mode and 20 pixels in the case of the portrait mode,
+its distance from the top is 40 pixels in the case of the landscape mode and 40 pixels in the case of the portrait mode,
+its font size is 30 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its commands are When it has been clicked, go to the page news1.
 
 add a text with the following properties:
-its name is resultTextA,
-its text is 00000000,
-its container is resultContainerA,
-its thickness is thick,
-its font size is 50 pixels,
-its width is 380 pixels,
-its height is 50 pixels,
-its distance from the top is 10 pixels,
-its distance from the left is 5 pixels,
-its font color is gray.
+its name is news2_link,
+its text is Now, the G11 & G12 students who have left school have the ability to join the school again,
+its font color is black,
+its container is news2_link_container,
+its width is 360 pixels in the case of the landscape mode and 360 pixels in the case of the portrait mode,
+its distance from the left is 20 pixels in the case of the landscape mode and 20 pixels in the case of the portrait mode,
+its distance from the top is 40 pixels in the case of the landscape mode and 40 pixels in the case of the portrait mode,
+its font size is 20 pixels in the case of the landscape mode and 20 pixels in the case of the portrait mode,
+its commands are When it has been clicked, go to the page news2.
 
 add a text with the following properties:
-its name is resultTextB,
-its text is 0,
-its container is resultContainerA,
-its thickness is thick,
-its font size is 35 pixels,
-its width is 380 pixels,
-its height is 50 pixels,
-its distance from the left is 5 pixels,
-its font color is gray.
+its name is news3_link,
+its text is Accommodation for first grade students starting on 9 September,
+its font color is black,
+its container is news3_link_container,
+its width is 360 pixels in the case of the landscape mode and 360 pixels in the case of the portrait mode,
+its distance from the left is 20 pixels in the case of the landscape mode and 20 pixels in the case of the portrait mode,
+its distance from the top is 40 pixels in the case of the landscape mode and 40 pixels in the case of the portrait mode,
+its font size is 30 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its commands are When it has been clicked, go to the page news3.
 
-add a grid container without a shadow with the following properties:
-its name is btnSetA,
-its container is btnContainerA,
-its width is 320 pixels,
-its length is 50 pixels,
-its distance from the top is 50 pixels.
+add a dialog_box with the following properties:
+its name is intro_video_container,
+its width is 800 pixels in the case of the landscape mode and 300 pixels in the case of the portrait mode,
+its commands are When it becomes out of the viewport, pause intro_video_about_stem.
 
-add a button with the following properties:
-its name is 1Btn,
-its text is 1,
-its container is btnSetA,
+add a video with the following properties:
+its name is intro_video_about_stem,
+its title is What are STEM schools ?!!,
+its source is https://www.youtube.com/watch?v=4ZTodnFfj10,
+its container is intro_video_container,
+its width is 800 pixels in the case of the landscape mode and 300 pixels in the case of the portrait mode,
+its length is 400 pixels in the case of the landscape mode and 400 pixels in the case of the portrait mode,
+its distance from the top is 5 pixels in the case of the landscape mode and 5 pixels in the case of the portrait mode,
+its distance from the left is 5 pixels in the case of the landscape mode and 5 pixels in the case of the portrait mode.
+
+add a container with the following properties:
+its name is footer,
+its container is home,
+its width is 1366 pixels in the case of the landscape mode and 412 pixels in the case of the portrait mode,
+its length is 100 pixels in the case of the landscape mode and 100 pixels in the case of the portrait mode,
+its background is white,
+its distance from the top is 1000 pixels in the case of the landscape mode and 1500 pixels in the case of the portrait mode.
+
+add a text with the following properties:
+its name is copyrights,
+its container is footer,
+its text is Copyrights 2017 Jste Team,
+its font color is black,
+its font size is 20 pixels in the case of the landscape mode and 20 pixels in the case of the portrait mode,
+its distance from the left is 550 pixels in the case of the landscape mode and 80 pixels in the case of the portrait mode,
+its distance from the top is 35 pixels in the case of the landscape mode and 35 pixels in the case of the portrait mode,
+its width is 300 pixels in the case of the landscape mode and 300 pixels in the case of the portrait mode.
+
+add a parallax container with the following properties:
+its name is feature1,
+its container is features,
+its width is 1366 pixels in the case of the landscape mode and 412 pixels in the case of the portrait mode,
+its length is 644 pixels in the case of the landscape mode and 732 pixels in the case of the portrait mode,
+its background is https://www.innova-solutions.co.uk/wp-content/uploads/2014/09/Brine-Leas-School-Lab.jpg.
+
+add a parallax container with the following properties:
+its name is feature2,
+its container is features,
+its width is 1366 pixels in the case of the landscape mode and 412 pixels in the case of the portrait mode,
+its length is 644 pixels in the case of the landscape mode and 732 pixels in the case of the portrait mode,
+its distance from the top is 644 pixels in the case of the landscape mode and 732 pixels in the case of the portrait mode,
+its background is http://media.npr.org/assets/img/2015/09/24/istock_000021865129_full_custom-481c5aaa7d727302821a0599c422d9d9d61f33ae-s900-c85.jpg.
+
+add a container with the following properties:
+its name is feature1_container_mask,
+its container is feature1,
+its background is black,
+its transparency is 50,
+its width is 1366 pixels in the case of the landscape mode and 412 pixels in the case of the portrait mode,
+its length is 644 pixels in the case of the landscape mode and 732 pixels in the case of the portrait mode.
+
+add a container with the following properties:
+its name is feature2_container_mask,
+its container is feature2,
+its background is black,
+its transparency is 50,
+its width is 1366 pixels in the case of the landscape mode and 412 pixels in the case of the portrait mode,
+its length is 644 pixels in the case of the landscape mode and 732 pixels in the case of the portrait mode.
+
+add a text with the following properties:
+its name is back2home_btn,
+its text is << an icon of chevron-left >>,
+its container is feature1,
+its distance from the top is 30 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its distance from the left is 30 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
 its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to 1 in the case that the value of resultTextA is 00000000 else set the value of resultTextA to << the value of resultTextA >>1 &&& When it has been clicked, set the value of resultTextB to << the result of the mathematical expression: the value of resultTextA >>.
+its font size is 30 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its commands are When it has been clicked, go to the page home.
 
-add a button with the following properties:
-its name is 2Btn,
-its text is 2,
-its container is btnSetA,
+
+add a text with the following properties:
+its name is feature1_title,
+its text is Prepared Labs,
+its container is feature1,
+its font thickness is thick,
 its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to 2 in the case that the value of resultTextA is 00000000 else set the value of resultTextA to << the value of resultTextA >>2 &&& When it has been clicked, set the value of resultTextB to << the result of the mathematical expression: the value of resultTextA >>.
+its distance from the top is 100 pixels in the case of the landscape mode and 50 pixels in the case of the portrait mode,
+its distance from the left is 70 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its font size is 100 pixels in the case of the landscape mode and 70 pixels in the case of the portrait mode,
+its width is 1000 pixels in the case of the landscape mode and 300 pixels in the case of the portrait mode,
+its animation is fadeInRight.
 
-add a button with the following properties:
-its name is 3Btn,
-its text is 3,
-its container is btnSetA,
+add a text with the following properties:
+its name is feature1_description,
+its text is STEM School of Alexandria is characterized by modern laboratories which have been prepared and designed according the latest technologies for << write this text in a bold font: Biology, Chemistry, Mechanics, Geology and Physics >>, which gives the students the chance to apply all what they study in the school instead of the useless theoretical studying without applying anything.,
+its container is feature1,
 its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to 3 in the case that the value of resultTextA is 00000000 else set the value of resultTextA to << the value of resultTextA >>3 &&& When it has been clicked, set the value of resultTextB to << the result of the mathematical expression: the value of resultTextA >>.
+its distance from the top is 100 pixels in the case of the landscape mode and 60 pixels in the case of the portrait mode,
+its distance from the left is 70 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its font size is 20 pixels in the case of the landscape mode and 20 pixels in the case of the portrait mode,
+its width is 1250 pixels in the case of the landscape mode and 350 pixels in the case of the portrait mode,
+its animation is fadeInRightBig.
 
-add a grid container without a shadow with the following properties:
-its name is btnSetB,
-its container is btnContainerA,
-its width is 320 pixels,
-its length is 50 pixels,
-its distance from the top is 140 pixels.
-
-add a button with the following properties:
-its name is 4Btn,
-its text is 4,
-its container is btnSetB,
+add a text with the following properties:
+its name is feature2_title,
+its text is Delicious Meals,
+its container is feature2,
+its font thickness is thick,
 its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to 4 in the case that the value of resultTextA is 00000000 else set the value of resultTextA to << the value of resultTextA >>4 &&& When it has been clicked, set the value of resultTextB to << the result of the mathematical expression: the value of resultTextA >>.
+its distance from the top is 100 pixels in the case of the landscape mode and 150 pixels in the case of the portrait mode,
+its distance from the left is 70 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its font size is 100 pixels in the case of the landscape mode and 70 pixels in the case of the portrait mode,
+its width is 1000 pixels in the case of the landscape mode and 300 pixels in the case of the portrait mode,
+its animation is fadeInRight.
 
-add a button with the following properties:
-its name is 5Btn,
-its text is 5,
-its container is btnSetB,
+add a text with the following properties:
+its name is feature2_description,
+its text is The school pays full attention to the students' living in the school and one of the main concerns of this attention is providing healthy meals to the students three times a day: << write this text in an italic font: the breakfast in the morning, the lunch and the dinner at night >>.,
+its container is feature2,
 its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to 5 in the case that the value of resultTextA is 00000000 else set the value of resultTextA to << the value of resultTextA >>5 &&& When it has been clicked, set the value of resultTextB to << the result of the mathematical expression: the value of resultTextA >>.
+its distance from the top is 100 pixels in the case of the landscape mode and 150 pixels in the case of the portrait mode,
+its distance from the left is 70 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its font size is 25 pixels in the case of the landscape mode and 20 pixels in the case of the portrait mode,
+its width is 1250 pixels in the case of the landscape mode and 350 pixels in the case of the portrait mode,
+its animation is fadeInRightBig.
 
-add a button with the following properties:
-its name is 6Btn,
-its text is 6,
-its container is btnSetB,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to 6 in the case that the value of resultTextA is 00000000 else set the value of resultTextA to << the value of resultTextA >>6 &&& When it has been clicked, set the value of resultTextB to << the result of the mathematical expression: the value of resultTextA >>.
+add a container with the following properties:
+its name is news1_container,
+its container is news1,
+its length is 1000 pixels in the case of the landscape mode and 1600 pixels in the case of the portrait mode,
+its width is 1166 pixels in the case of the landscape mode and 380 pixels in the case of the portrait mode,
+its distance from the left is 100 pixels in the case of the landscape mode and 13 pixels in the case of the portrait mode,
+its distance from the top is 100 pixels in the case of the landscape mode and 100 pixels in the case of the portrait mode,
+its animation is fadeInUp.
 
-add a grid container without a shadow with the following properties:
-its name is btnSetC,
-its container is btnContainerA,
-its width is 320 pixels,
-its length is 50 pixels,
-its distance from the top is 220 pixels.
+add a container with the following properties:
+its name is news2_container,
+its container is news2,
+its length is 1000 pixels in the case of the landscape mode and 1000 pixels in the case of the portrait mode,
+its width is 1166 pixels in the case of the landscape mode and 380 pixels in the case of the portrait mode,
+its distance from the left is 100 pixels in the case of the landscape mode and 13 pixels in the case of the portrait mode,
+its distance from the top is 100 pixels in the case of the landscape mode and 100 pixels in the case of the portrait mode,
+its animation is fadeInUp.
 
-add a button with the following properties:
-its name is 7Btn,
-its text is 7,
-its container is btnSetC,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to 7 in the case that the value of resultTextA is 00000000 else set the value of resultTextA to << the value of resultTextA >>7 &&& When it has been clicked, set the value of resultTextB to << the result of the mathematical expression: the value of resultTextA >>.
+add a container with the following properties:
+its name is news3_container,
+its container is news3,
+its length is 1300 pixels in the case of the landscape mode and 1600 pixels in the case of the portrait mode,
+its width is 1166 pixels in the case of the landscape mode and 380 pixels in the case of the portrait mode,
+its distance from the left is 100 pixels in the case of the landscape mode and 13 pixels in the case of the portrait mode,
+its distance from the top is 100 pixels in the case of the landscape mode and 100 pixels in the case of the portrait mode,
+its animation is fadeInUp.
 
-add a button with the following properties:
-its name is 8Btn,
-its text is 8,
-its container is btnSetC,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to 8 in the case that the value of resultTextA is 00000000 else set the value of resultTextA to << the value of resultTextA >>8 &&& When it has been clicked, set the value of resultTextB to << the result of the mathematical expression: the value of resultTextA >>.
+add a text with the following properties:
+its name is news1_title,
+its container is news1_container,
+its text is Starting school this year on 24 September,
+its font color is red,
+its distance from the top is 20 pixels in the case of the landscape mode and 20 pixels in the case of the portrait mode,
+its distance from the left is 30 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its font size is 60 pixels in the case of the landscape mode and 40 pixels in the case of the portrait mode,
+its width is 1126 pixels in the case of the landscape mode and 320 pixels in the case of the portrait mode,
+its font thickness is thick.
 
-add a button with the following properties:
-its name is 9Btn,
-its text is 9,
-its container is btnSetC,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to 9 in the case that the value of resultTextA is 00000000 else set the value of resultTextA to << the value of resultTextA >>9 &&& When it has been clicked, set the value of resultTextB to << the result of the mathematical expression: the value of resultTextA >>.
+add a text with the following properties:
+its name is news2_title,
+its container is news2_container,
+its text is Now, the G11 & G12 students who have left school have the ability to join the school again,
+its font color is red,
+its distance from the top is 20 pixels in the case of the landscape mode and 20 pixels in the case of the portrait mode,
+its distance from the left is 30 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its font size is 40 pixels in the case of the landscape mode and 20 pixels in the case of the portrait mode,
+its width is 1126 pixels in the case of the landscape mode and 320 pixels in the case of the portrait mode,
+its font thickness is thick.
 
-add a grid container without a shadow with the following properties:
-its name is btnSetD,
-its container is btnContainerA,
-its width is 320 pixels,
-its length is 50 pixels,
-its distance from the top is 300 pixels.
+add a text with the following properties:
+its name is news3_title,
+its container is news3_container,
+its text is Accommodation for first grade students starting on 9 September,
+its font color is red,
+its distance from the top is 20 pixels in the case of the landscape mode and 20 pixels in the case of the portrait mode,
+its distance from the left is 30 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its font size is 60 pixels in the case of the landscape mode and 40 pixels in the case of the portrait mode,
+its width is 1126 pixels in the case of the landscape mode and 320 pixels in the case of the portrait mode,
+its font thickness is thick.
 
-add a button with the following properties:
-its name is dotBtn,
-its text is .,
-its container is btnSetD,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to . in the case that the value of resultTextA is 00000000 else set the value of resultTextA to << the value of resultTextA >>. &&& When it has been clicked, set the value of resultTextB to << the result of the mathematical expression: the value of resultTextA >>.
+add an image with the following properties:
+its name is news3_photo,
+its title is New students' reception schedule,
+its source is https://preview.ibb.co/gMR4EF/News3_Photo.jpg,
+its width is 394 pixels in the case of the landscape mode and 320 pixels in the case of the portrait mode,
+its length is 700 pixels in the case of the landscape mode and 569 pixels in the case of the portrait mode,
+its container is news3_container,
+its distance from the left is 370 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its distance from the top is 30 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode.
 
-add a button with the following properties:
-its name is 0Btn,
-its text is 0,
-its container is btnSetD,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to 0 in the case that the value of resultTextA is 00000000 or the value of resultTextA is 0 else set the value of resultTextA to << the value of resultTextA >>0 &&& When it has been clicked, set the value of resultTextB to << the result of the mathematical expression: the value of resultTextA >>.
+add an image with the following properties:
+its name is news2_photo,
+its source is https://i0.wp.com/www.speakinginbytes.com/wp-content/uploads/2016/12/announcement-banner.png,
+its width is 500 pixels in the case of the landscape mode and 320 pixels in the case of the portrait mode,
+its length is 362 pixels in the case of the landscape mode and 232 pixels in the case of the portrait mode,
+its container is news2_container,
+its distance from the left is 300 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its distance from the top is 30 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode.
 
-add a button with the following properties:
-its name is equalBtn,
-its text is =,
-its container is btnSetD,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to << the value of resultTextB >>.
+add an image with the following properties:
+its name is news1_photo,
+its title is The minister of the education during a meeting,
+its source is http://portal.moe.gov.eg/MediaCenter/PhotoAlbums/n_2017/n1_26-8-17.jpg,
+its width is 1046 pixels in the case of the landscape mode and 320 pixels in the case of the portrait mode,
+its length is 325 pixels in the case of the landscape mode and 99 pixels in the case of the portrait mode,
+its container is news1_container,
+its distance from the left is 60 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its distance from the top is 30 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode.
 
-add a grid container without a shadow with the following properties:
-its name is btnSetE,
-its container is btnContainerA,
-its background is #616161,
-its width is 80 pixels,
-its length is 400 pixels,
-its distance from the left is 320 pixels,
-its distance from the top is 0 pixels.
+add a text with the following properties:
+its name is news1_description,
+its container is news1_container,
+its text is Ahmed Khairy, the official spokesman of the Ministry of Education and Technical Education, said that the first decisions of the Supreme Education Council before the university start the new academic year September 23, and approve the timetable for the academic year 2018/2017.<< a line break >><< a line break >>Chaired by Dr. Tarek Shawqi, Minister of Education and Technical Education, in the presence of Dr. Youssef Rashid, Secretary General of the Supreme Council of Universities, Dr. Abdulwahab Ezzat, President of Ain Shams University, Dr. Mohammed Abu Zaid Al Amir, Head of Al Azhar Sector, A number of ministries, and heads of the sector T. ministry; to discuss the special pre-university education files for the academic year 2018/2017.,
+its font color is black,
+its width is 1106 pixels in the case of the landscape mode and 320 pixels in the case of the portrait mode,
+its distance from the left is 30 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its distance from the top is 100 pixels in the case of the landscape mode and 100 pixels in the case of the portrait mode,
+its font size is 25 pixels in the case of the landscape mode and 25 pixels in the case of the portrait mode.
 
-add a button with the following properties:
-its name is clearBtn,
-its text is c,
-its container is btnSetE,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to 00000000 &&& When it has been clicked, set the value of resultTextB to 0.
+add a text with the following properties:
+its name is news2_description,
+its container is news2_container,
+its text is In the light of the decisions taken by the executive committee of schools of excellence at the meeting held on Thursday 7/9/2017 students who have transferred to the secondary schools and wish to return to the schools of excellence again can write their wishes and send them through the school to the STEM unit by the end of next week .,
+its font color is black,
+its width is 1106 pixels in the case of the landscape mode and 320 pixels in the case of the portrait mode,
+its distance from the left is 30 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its distance from the top is 100 pixels in the case of the landscape mode and 100 pixels in the case of the portrait mode,
+its font size is 25 pixels in the case of the landscape mode and 25 pixels in the case of the portrait mode.
 
-add a button with the following properties:
-its name is dividedByBtn,
-its text is ÷,
-its container is btnSetE,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to << the value of resultTextA >>÷ in the case that the value of resultTextA isn't 00000000.
+add a text with the following properties:
+its name is news3_description,
+its container is news3_container,
+its text is STEM schools all over the republic has announced that populate the first secondary grade students and newly enrolled in the school will start on Saturday 09/09/2017 that walking this day, according to the schedule mentioned above in preparation for the start of training on the school system or what is called The Summer Camp, which lasts for two weeks.,
+its font color is black,
+its width is 1106 pixels in the case of the landscape mode and 320 pixels in the case of the portrait mode,
+its distance from the left is 30 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its distance from the top is 100 pixels in the case of the landscape mode and 100 pixels in the case of the portrait mode,
+its font size is 25 pixels in the case of the landscape mode and 25 pixels in the case of the portrait mode.
 
-add a button with the following properties:
-its name is multipliedByBtn,
-its text is ×,
-its container is btnSetE,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to << the value of resultTextA >>× in the case that the value of resultTextA isn't 00000000.
+clone back2home_btn including its commands with the following properties:
+its name is back2home_btn_A,
+its distance from the top is 30 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its container is news1,
+its distance from the left is 30 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its font color is black.
 
-add a button with the following properties:
-its name is minusBtn,
-its text is -,
-its container is btnSetE,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to << the value of resultTextA >>- in the case that the value of resultTextA isn't 00000000.
+clone back2home_btn_A including its commands with the following properties:
+its name is back2home_btn_B,
+its container is news2.
 
-add a button with the following properties:
-its name is plusBtn,
-its text is +,
-its container is btnSetE,
-its font color is white,
-its font size is 40 pixels,
-its commands are When it has been clicked, set the value of resultTextA to << the value of resultTextA >>+ in the case that the value of resultTextA isn't 00000000.
+clone back2home_btn_A including its commands with the following properties:
+its name is back2home_btn_C,
+its container is news3.
+
+add a container with the following properties:
+its name is contact_page_container,
+its container is contact_us,
+its length is 600 pixels in the case of the landscape mode and 600 pixels in the case of the portrait mode,
+its width is 1166 pixels in the case of the landscape mode and 380 pixels in the case of the portrait mode,
+its distance from the left is 100 pixels in the case of the landscape mode and 13 pixels in the case of the portrait mode,
+its distance from the top is 100 pixels in the case of the landscape mode and 100 pixels in the case of the portrait mode,
+its animation is fadeInUp.
+
+clone back2home_btn_A including its commands with the following properties:
+its name is back2home_btn_D,
+its container is contact_us.
+
+add a text with the following properties:
+its name is contact_page_title,
+its container is contact_page_container,
+its text is Contact us,
+its font color is black,
+its distance from the top is 30 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its distance from the left is 30 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its font size is 60 pixels in the case of the landscape mode and 40 pixels in the case of the portrait mode,
+its width is 1126 pixels in the case of the landscape mode and 1126 pixels in the case of the portrait mode,
+its font thickness is thick.
+
+add a writing_zone with the following properties:
+its name is name_field,
+its title is name,
+its container is contact_page_container,
+its width is 800 pixels in the case of the landscape mode and 320 pixels in the case of the portrait mode,
+its distance from the left is 40 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its distance from the top is 60 pixels in the case of the landscape mode and 60 pixels in the case of the portrait mode.
+
+add a writing_zone with the following properties:
+its name is email_field,
+its title is E-mail,
+its container is contact_page_container,
+its width is 800 pixels in the case of the landscape mode and 320 pixels in the case of the portrait mode,
+its distance from the left is 40 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its distance from the top is 60 pixels in the case of the landscape mode and 60 pixels in the case of the portrait mode.
+
+add a select_menu with the following properties:
+its name is message_type,
+its title is Message Type,
+its items are complaint &&& enquiry,
+its container is contact_page_container,
+its width is 800 pixels in the case of the landscape mode and 320 pixels in the case of the portrait mode,
+its distance from the left is 40 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its distance from the top is 60 pixels in the case of the landscape mode and 60 pixels in the case of the portrait mode.
+
+add a multiline writing_zone with a counter with the following properties:
+its name is the_message,
+its title is The Message,
+its container is contact_page_container,
+its width is 800 pixels in the case of the landscape mode and 320 pixels in the case of the portrait mode,
+its distance from the left is 40 pixels in the case of the landscape mode and 30 pixels in the case of the portrait mode,
+its distance from the top is 60 pixels in the case of the landscape mode and 60 pixels in the case of the portrait mode.
+
+add a raised button with the following properties:
+its name is send_button,
+its text is Send,
+its font color is red,
+its container is contact_page_container,
+its distance from the left is 1050 pixels in the case of the landscape mode and 320 pixels in the case of the portrait mode,
+its distance from the top is 120 pixels in the case of the landscape mode and 120 pixels in the case of the portrait mode,
+its commands are When it has been clicked, go to the public database messages the branch enquiries and then insert the following data: the value of name_field in the slot name, the value of email_field in the slot email, the value of the_message in the slot enquiry in the case that the value of message_type is enquiry else go to the public database messages the branch complaints and then insert the following data: the value of name_field in the slot name, the value of email_field in the slot email, the value of the_message in the slot complaint in the case that the value of message_type is complaint &&& When it has been clicked, set the value of name_field to hello.
 
 </en-us>
