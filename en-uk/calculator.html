@@ -1,7 +1,5 @@
 <meta charset="UTF-8">
 <script src="https://jste-manager.herokuapp.com/loader.min.js"></script>
-<en-uk>
-
 configure this app with the following properties:
 its title is Calculator,
 its logo is http://www.iconarchive.com/download/i99341/dtafalonso/android-lollipop/Calculator.ico,
@@ -13,8 +11,9 @@ its name is calculator.
 
 add a sidebar with the following properties:
 its name is primary_sidebar,
-its distance from the top is 275 pixels,
+its distance from the bottom is 0 pixels,
 its background is #69F0AE,
+its width is 300 pixels,
 its length is 400 pixels.
 
 add a grid container without a shadow with the following properties:
@@ -162,32 +161,33 @@ its name is flashlightBtn,
 its text is << an icon of lightbulb-o >>,
 its container is resultContainerA,
 its font size is 30 pixels,
-its height is 50 pixels,
+its length is 50 pixels,
+its width is 30 pixels,
 its distance from the top is 20 pixels,
 its distance from the left is 370 pixels,
 its font colour is gray,
 its commands are When it has been clicked, toggle the flashlight.
 
-add a text with the following properties:
+add a scrollable text with the following properties:
 its name is resultTextA,
 its text is 00000000,
 its container is resultContainerA,
 its font thickness is thick,
 its font size is 50 pixels,
 its width is 380 pixels,
-its height is 50 pixels,
+its length is 60 pixels,
 its distance from the top is 10 pixels,
 its distance from the left is 5 pixels,
 its font colour is gray.
 
-add a text with the following properties:
+add a scrollable text with the following properties:
 its name is resultTextB,
 its text is 0,
 its container is resultContainerA,
 its font thickness is thick,
 its font size is 35 pixels,
 its width is 380 pixels,
-its height is 50 pixels,
+its length is 50 pixels,
 its distance from the left is 5 pixels,
 its font colour is gray.
 
@@ -321,7 +321,7 @@ its container is btnContainerA,
 its background is #616161,
 its width is 80 pixels,
 its length is 400 pixels,
-its distance from the left is 320 pixels,
+its distance from the left is 332 pixels,
 its distance from the top is 0 pixels.
 
 add a button with the following properties:
@@ -363,5 +363,3 @@ its container is btnSetE,
 its font colour is white,
 its font size is 40 pixels,
 its commands are When it has been clicked, set the value of resultTextA to << the value of resultTextA >>+ in the case that the value of resultTextA isn't 00000000.
-
-</en-uk>
