@@ -785,8 +785,7 @@
             this$1.tokens.push({
               type: 'code',
               text: !this$1.options.pedantic ?
-                cap.replace(/\n+$/, '') :
-                cap
+                cap.replace(/\n+$/, '') : cap
             });
             continue;
           }
@@ -944,8 +943,7 @@
 
               this$1.tokens.push({
                 type: loose ?
-                  'loose_item_start' :
-                  'list_item_start'
+                  'loose_item_start' : 'list_item_start'
               });
 
               // Recurse.
@@ -968,8 +966,7 @@
             src = src.substring(cap[0].length);
             this$1.tokens.push({
               type: this$1.options.sanitize ?
-                'paragraph' :
-                'html',
+                'paragraph' : 'html',
               pre: !this$1.options.sanitizer &&
                 (cap[1] === 'pre' || cap[1] === 'script' || cap[1] === 'style'),
               text: cap[0]
@@ -1027,8 +1024,7 @@
             this$1.tokens.push({
               type: 'paragraph',
               text: cap[1].charAt(cap[1].length - 1) === '\n' ?
-                cap[1].slice(0, -1) :
-                cap[1]
+                cap[1].slice(0, -1) : cap[1]
             });
             continue;
           }
@@ -1707,8 +1703,7 @@
           case 'html':
             {
               var html = !this.token.pre && !this.options.pedantic ?
-                this.inline.output(this.token.text) :
-                this.token.text;
+                this.inline.output(this.token.text) : this.token.text;
               return this.renderer.html(html);
             }
           case 'paragraph':
@@ -1770,11 +1765,7 @@
           // we can ignore everything in base after the last slash of its path component,
           // but we might need to add _that_
           // https://tools.ietf.org/html/rfc3986#section-3
-          if (/^[^:]+:\/*[^/]*$/.test(base)) {
-            baseUrls[' ' + base] = base + '/';
-          } else {
-            baseUrls[' ' + base] = base.replace(/[^/]*$/, '');
-          }
+          baseUrls[' ' + base] = base.replace(/[^/]*$/, '');
         }
         base = baseUrls[' ' + base];
 
