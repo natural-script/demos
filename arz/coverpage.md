@@ -1,4 +1,4 @@
-![logo](assets/img/logo.png)
+![logo](../assets/img/logo.png)
 
 # أهلا و سهلا بيك فى استعراضات جستى
 
